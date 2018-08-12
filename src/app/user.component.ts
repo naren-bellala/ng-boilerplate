@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-user',
-    template: `<p>Hello all!!!</p>`,
+    template: `
+        <input type="text" [(ngModel)]="name"/>
+        <p>Hello {{name}}!!!</p>
+    `,
 })
-export class UserComponent {}
+export class UserComponent {
+    name = 'naren';
+}
