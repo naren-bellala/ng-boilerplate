@@ -4,4 +4,4 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-<app-user></app-user>
+<app-user [nameValue]="'Max'" (inputEventHandler)="onNameChangeHander($event)"></app-user>

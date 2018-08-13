@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-boilerplate';
+
+  onNameChangeHander = (newNameValue) => {
+    console.log(newNameValue);
+  }
 }
